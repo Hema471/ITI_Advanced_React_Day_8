@@ -4,6 +4,7 @@ import RootLayout from "./RootLayout";
 import { Route, createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cards from "./Cards";
 import MovieDetail from "./MovieDetail";
+import FavoritesPage from "./FavoritesPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -13,6 +14,8 @@ const App = () => {
       children: [
         { index: true, element: <Cards /> },
         { path: "movies/:id", element: <MovieDetail /> },
+        { path: "/home", element: <Cards /> },
+        { path: "/MyFav", element: <FavoritesPage /> },
       ],
     },
   ]);

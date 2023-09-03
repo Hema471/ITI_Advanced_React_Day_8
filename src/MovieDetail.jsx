@@ -20,9 +20,9 @@ const MovieDetail = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <img
+            <img 
               src={"https://image.tmdb.org/t/p/w500" + movieDetails.poster_path}
-              className="w-100"
+              className="w-100 "
             />
           </div>
           <div className="col-md-8">
